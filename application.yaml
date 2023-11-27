@@ -7,7 +7,6 @@ spec:
   project: default
   source:
     repoURL: https://github.com/Rendani-M/Api.git
-    path: manifests
     targetRevision: HEAD
   destination: 
     server: https://kubernetes.default.svc
