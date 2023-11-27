@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: testApi-deployment
+spec:
+  selector:
+    matchLabels:
+      app: testApi
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: testApi
+    spec:
+      containers:
+      - name: testapi
+        image: rendani24/testapi_01:latest
+        ports:
+        - containerPort: 3000
